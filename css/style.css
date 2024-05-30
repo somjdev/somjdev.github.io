@@ -1,0 +1,68 @@
+/* colour palette https://atlassian.design/foundations/color-new/color-palette-new */
+
+@font-face {
+    font-family: 'PT sans';
+    src: url('/css/fonts/PTSans-Bold.ttf');
+}
+
+/* General */
+body {
+    background-color: rgb(22,26,29); /* DarkNeutral0 */
+}
+
+#main_title {
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    font-family: 'PT sans', Arial, sans-serif;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 3em;
+    width: 1em;
+    text-align: center;
+    text-decoration: none;
+    
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+.fa-github {
+    background-color: transparent;
+    color: white;
+}
+
+/* Nav */
+
+.my_links {
+    display: flex;
+    justify-content: center;
+}
+
+.my_links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.my_links li {
+    font-size: min(3h, 3vw);
+    float: left;
+}
+
+
+.my_links li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.my_links a:hover {
+    background-color: whitesmoke;
+}

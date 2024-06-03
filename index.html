@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
       <meta name="author" content="somjdev">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="image_src" href="/images/damn.ico">
+      <link rel="image_src" href="https://avatars.githubusercontent.com/u/110367081?s=400&v=4">
 
       <link rel="stylesheet" href="css/style.css">
       
@@ -17,23 +17,20 @@
 
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
       
-
-
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      
+      <script> 
+         $(function(){
+           $("#header").load("pages/header.html"); 
+         });
+       </script>
    </head>
+
    <body>
-      <div class="header">
-         <a href="/" class="somjdev">somjdev</a>
-         <div class="navbar">
-            <a href="https://github.com/somjdev", target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="/contact.html">Socials</a>
-            <a href="/">Projects</a>
-         </div>
-      </div>
+      <div id="header"></div>
       <div class="aboutme">
          <p>Cranking it</p>
-
       </div>
    </body>
 </html>

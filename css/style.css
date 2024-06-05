@@ -5,28 +5,83 @@
     src: url('/css/fonts/PTSans-Bold.ttf');
 }
 
-/* General */
+/* misc */
 body {
     background-color: rgb(22,26,29); /* DarkNeutral0 */
     font-family: "PT sans", Helvetica, sans-serif;
 }
 
-/* top of page */
+/* top nav */
 
-#top {
-    text-align: center;
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 2.5em;
+    background: rgb(16,18,20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-#top a {
-    font-size: 4em;
+.somjdev {
+    font-size: 2em;
     color: white;
+    text-decoration: none;
 }
 
-#socialsNav a {
-    padding: 0.2em;
-    font-size: 2.5em;
+.navbar a{
+    position: relative;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    margin-left: 0.7em;
 }
 
-#socialsNav a:hover {
-    background-color: grey;
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0.05em;
+    background: white;
+    transition: .2s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/* about me */
+
+.aboutme {
+    text-align: center;
+    color: white;
+    padding: 0;
+}
+
+.aboutme h1 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+}
+
+.aboutme ul {
+    display: inline-flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutme li {
+    justify-content: center;
+    padding: 0 0.5em;
+}
+
+.aboutme li a {
+    color: white;
+    font-size: 4em;
 }
